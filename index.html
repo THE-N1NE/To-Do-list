@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List 应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>我的待办事项</h1>
+        <div class="todo-form">
+            <input type="text" id="todo-input" placeholder="添加新任务..." autocomplete="off">
+            <button id="add-btn">添加</button>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="active">未完成</button>
+            <button class="filter-btn" data-filter="completed">已完成</button>
+        </div>
+        <ul id="todo-list" class="todo-list">
+            <!-- 待办事项将通过JavaScript动态添加 -->
+        </ul>
+        <div class="todo-footer">
+            <span id="task-count">0 个待办任务</span>
+            <button id="clear-completed">清除已完成</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
